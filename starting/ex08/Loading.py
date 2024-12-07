@@ -1,5 +1,4 @@
 import sys
-import time
 
 def ft_tqdm(lst: range) -> None:
     total = len(lst)

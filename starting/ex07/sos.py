@@ -37,8 +37,11 @@ def main():
     try:
         print(encode_to_morse(input_string))
     except AssertionError as e:
-        print(e)
+        print(f"AssertionError: {e}")
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except AssertionError as e:
+        print(f"AssertionError: {e}")
