@@ -1,0 +1,15 @@
+img_array[x_start:x_end, y_start:y_end, 0:1]
+1. x_start:x_end
+Selects rows (vertical section of the image)
+
+E.g., 100:500 picks rows 100 to 499
+
+2. y_start:y_end
+Selects columns (horizontal section of the image)
+
+E.g., 200:600 picks columns 200 to 599
+
+3. 0:1
+Selects the first channel only — e.g., Red in an RGB image.
+
+The 0:1 instead of just 0 keeps the third dimension (i.e., the shape becomes (H, W, 1) instead of (H, W)). This is helpful when you want to keep the image 3D even if it has only one channel (e.g., for grayscale).
