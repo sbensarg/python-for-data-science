@@ -34,3 +34,20 @@ def ft_load(path: str) -> np.ndarray:
     except Exception as e:
         print(f"Unexpected error: {e}")
     return None
+
+
+def main():
+    """
+    Main function to test the ft_load function with an example image path.
+    Handles any exceptions and prints the result.
+    """
+    try:
+        image_array = ft_load("landscape.jpg")
+        if image_array is not None:
+            print(image_array)
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+
+if __name__ == "__main__":
+    main()

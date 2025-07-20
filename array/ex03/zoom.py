@@ -19,7 +19,7 @@ def display_image(img, cmap="gray"):
 
 
 def zoom(image):
-    """Return a zoomed region of the image with only the red channel (grayscale).
+    """Return a zoomed region of the image with only the red channel.
     Parameters:
         image (np.ndarray): The image to zoom.
     Returns:
@@ -29,6 +29,7 @@ def zoom(image):
 
 
 def main():
+    """Main function to load an image, zoom into a region, and display it."""
     try:
         img = ft_load("animal.jpeg")
         print("The shape of image is:", img.shape)
