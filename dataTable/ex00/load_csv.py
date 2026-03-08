@@ -16,7 +16,7 @@ def load(path: str):
 
 def main():
     """
-    Main function to test dataset loading.
+    main function to test dataset loading.
     """
     pass
 

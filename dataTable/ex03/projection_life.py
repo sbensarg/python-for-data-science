@@ -4,7 +4,7 @@ from load_csv import load
 
 def main():
     """
-    Display life expectancy vs GDP per capita
+    display life expectancy vs GDP per capita
     for the year 1900.
     """
     try:
@@ -31,29 +31,29 @@ def main():
 
         plt.scatter(gdp, life_exp)
 
-        # Log scale for GDP
+        # log scale for GDP
         plt.xscale("log")
 
-        # Custom X-axis ticks
+        # custom xaxis ticks
         plt.xticks(
             [300, 1000, 10000],
             ["300", "1k", "10k"]
         )
- 
-        # Top title
+
+        # top title
         plt.title("1900")
 
-        # Bottom X label
+        # bottom X label
         plt.xlabel("Gross Domestic Product")
 
-        # Y axis
+        # y axis
         plt.ylabel("Life Expectancy (Years)")
 
         plt.tight_layout()
         plt.show()
 
     except Exception as e:
-        print("An unexpected error occurred:", e)
+        print("an unexpected error occurred:", e)
 
 
 if __name__ == "__main__":

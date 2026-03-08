@@ -16,8 +16,8 @@ def load(path: str):
 
 def main():
     """
-    Main function.
-    Does nothing (required by subject rules).
+    main function.
+    does nothing (required by subject rules).
     """
     pass
 

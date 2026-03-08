@@ -4,18 +4,17 @@ from load_csv import load
 
 def main():
     """
-    Display life expectancy graph for Morocco.
+    display life expectancy graph for Morocco.
     """
     try:
         dataset = load("life_expectancy_years.csv")
         if dataset is None:
             return
 
-        # Select Morocco row
         country_data = dataset[dataset["country"] == "Morocco"]
 
         if country_data.empty:
-            print("Country not found.")
+            print("country not found")
             return
 
         # Years columns (exclude 'country')
@@ -30,6 +29,8 @@ def main():
         plt.xlabel("Year")
         plt.ylabel("Life Expectancy")
 
+        plt.yticks(range(20, 91, 10))
+
         # Display 8 ticks increasing by ~40 years
         start_year = int(years.min())
         end_year = int(years.max())
@@ -41,7 +42,7 @@ def main():
         plt.show()
 
     except Exception as e:
-        print("An unexpected error occurred:", e)
+        print("an unexpected error occurred:", e)
 
 
 if __name__ == "__main__":

@@ -7,17 +7,17 @@ def load(path: str):
     """
     try:
         dataset = pd.read_csv(path)
-        print(f"Loading dataset of dimensions {dataset.shape}")
+        print(f"loading dataset of dimensions {dataset.shape}")
         return dataset
     except (FileNotFoundError, pd.errors.ParserError, Exception):
-        print("Error: could not load dataset.")
+        print("error: could not load dataset.")
         return None
 
 
 def main():
     """
-    Main function.
-    Does nothing (required by subject rules).
+    main function.
+    does nothing (required by subject rules).
     """
     pass
 
